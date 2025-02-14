@@ -73,7 +73,7 @@ Run the script and navigate the interactive menu:
 ```
 
 ### **1️⃣ Install Vault**
-Creates the GitHub repository (`ssh-key-vault`) and sets up the local environment.
+Creates the GitHub repository (`ssh-key-vault`) and sets up the local environment. Make sure you change the username in configuration from pwnmeow to your accounts username or this will fail.
 
 ### **2️⃣ Add SSH Key**
 Prompts for:
