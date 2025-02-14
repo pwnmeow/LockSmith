@@ -13,7 +13,7 @@ VAULT_DIR="$HOME/.ssh/keyvault"
 KEYS_DIR="$VAULT_DIR/keys"
 DB_FILE="$VAULT_DIR/keys.db"
 CONFIG_FILE="$HOME/.ssh/config"
-CRON_JOB="0 * * * * $VAULT_DIR/ssh-key-vault.sh sync"
+CRON_JOB="0 * * * * $VAULT_DIR/locksmith.sh sync"
 
 
 # ==========================================
