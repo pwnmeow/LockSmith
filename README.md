@@ -41,11 +41,11 @@
 ```sh
 git clone https://github.com/your-username/ssh-key-vault.git
 cd ssh-key-vault
-chmod +x ssh-key-vault.sh
+chmod +x locksmith.sh
 ```
 To start the SSH Key Vault, run:
 ```sh
-./ssh-key-vault.sh
+./locksmith.sh
 ```
 
 ---
@@ -53,7 +53,7 @@ To start the SSH Key Vault, run:
 ## **🛠️ Usage**
 Run the script and navigate the interactive menu:
 ```sh
-./ssh-key-vault.sh
+./locksmith.sh
 ```
 ### **📜 Main Menu**
 ```
@@ -167,6 +167,6 @@ Inspired by **secure SSH key management needs**.
 ### **🚀 Ready to Go?**
 Run:
 ```sh
-./ssh-key-vault.sh
+./locksmith.sh
 ```
 Enjoy **secure SSH key management** with GitHub automation! 🔐🔥
