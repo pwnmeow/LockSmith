@@ -17,7 +17,7 @@ CRON_JOB="0 * * * * $VAULT_DIR/ssh-key-vault.sh sync"
 
 
 # ==========================================
-# Function: List SSH Keys (Fixed with "Return to Menu" Prompt)
+# Function: List SSH Keys 
 # ==========================================
 list_keys() {
     echo "🔍 Listing stored SSH keys..."
@@ -44,7 +44,7 @@ list_keys() {
 }
 
 # ==========================================
-# Function: Delete SSH Key (Now Also Deletes from GitHub)
+# Function: Delete SSH Key 
 # ==========================================
 delete_key() {
     list_keys  # Show available keys first
@@ -149,7 +149,7 @@ initialize_vault() {
 }
 
 # ==========================================
-# Function: Add New SSH Key (Enforcing Naming Convention)
+# Function: Add New SSH Key 
 # ==========================================
 add_ssh_key() {
     read -p "🌐 Enter Hostname (e.g., example.com): " hostname
