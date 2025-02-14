@@ -143,7 +143,7 @@ initialize_vault() {
         touch "$DB_FILE"
     fi
 
-    (crontab -l 2>/dev/null | grep -v "$VAULT_DIR/ssh-key-vault.sh sync"; echo "$CRON_JOB") | crontab -
+    (crontab -l 2>/dev/null | grep -v "$VAULT_DIR/locksmith.sh sync"; echo "$CRON_JOB") | crontab -
 
     echo "✅ Initialization complete!"
 }
@@ -234,7 +234,7 @@ uninstall_vault() {
     if [[ "$confirm" =~ ^[Yy]$ ]]; then
         echo "🚀 Removing SSH Key Vault..."
         rm -rf "$VAULT_DIR"
-        crontab -l | grep -v "$VAULT_DIR/ssh-key-vault.sh sync" | crontab -
+        crontab -l | grep -v "$VAULT_DIR/locksmith.sh sync" | crontab -
         echo "✅ Uninstallation complete!"
     else
         echo "❌ Uninstallation aborted."
