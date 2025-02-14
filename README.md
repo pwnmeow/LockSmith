@@ -19,7 +19,7 @@
 - 🛠️ **Dependencies:** `git`, `gh (GitHub CLI)`, `ssh-keygen`, `zip`
 
 ### **GitHub Setup**
-1. Ensure you have a **GitHub account**.
+1. Ensure you have a **GitHub account**.  Make sure you change the username in configuration from pwnmeow to your accounts username.
 2. Set up **SSH authentication** with GitHub:
    ```sh
    ssh-keygen -t ed25519 -C "your-email@example.com"
